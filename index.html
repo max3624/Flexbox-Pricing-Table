@@ -53,18 +53,19 @@
       position:relative;
       
     }
-
+ 
     .plan-features{
+      list-style:none;
       padding:10px 0px 10px 0px;
+      margin:0;
     }
       .mid-feature{
-        margin: 10px 0px 10px 0px;
+        margin: 20px 0px 20px 0px;
       }
-
 
     .plan-button{
       position: relative;
-      top:20px;
+      top:10px;
       border-radius: 5%;
       border-style: none;
       transition-duration: 0.4s;
@@ -73,7 +74,7 @@
       height:30px;
       background-color: black;
       color:white;
-      
+      margin: 10px;
     }
     .plan-button:hover{
       background-color:darkblue;
@@ -83,77 +84,10 @@
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
       .pricing-container{
-        position:relative;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 100%;
       }
 
-      .pricing-plan{
-        flex:1;
-        margin: 1rem;
-        padding: 1rem;
-        border-radius: 2%;
-        min-width: 350px;
-        max-width: 400px;
-        height:300px;
-        text-align:center;
-    } 
-
-    .plan-title{
-      font-size: 1.5rem;
-      font-weight: bold;
-      padding: 10px;
-      border-bottom-style :solid;
-    }
-      .basic{
-        color:black;
-        background-color: #C38154;
-      }
-      .standard{
-        color:black;
-        background-color: silver;
-      }
-      .premium{
-        color:black;
-        background-color: rgb(238, 204, 9);
-      }
-
-
-    .plan-price{
-      font-size: 2.7rem;
-      font-weight: bold;
-      margin: 10px;
-      position:relative;
-      
-    }
-
-    .plan-features{
-      padding:10px 0px 10px 0px;
-    }
-      .mid-feature{
-        margin: 10px 0px 10px 0px;
-      }
-
-
-    .plan-button{
-      position: relative;
-      top:5px;
-      border-radius: 5%;
-      border-style: none;
-      transition-duration: 0.4s;
-      font-size: 1rem;
-      width:100px;
-      height:30px;
-      background-color: black;
-      color:white;
-      
-    }
-    .plan-button:hover{
-      background-color:darkblue;
-      color: rgb(39, 240, 13);
-    }
     }
   </style>
 </head>
@@ -164,9 +98,9 @@
       <div class="plan-title">Basic</div>
       <div class="plan-price">$9.99/month</div>
       <ul class="plan-features">
-        <ul>✅ 10GB Storage</ul>
-        <ul class="mid-feature">✅ 1 User</ul>
-        <ul>🚫 Support</ul>
+        <li>✅ 10GB Storage</li>
+        <li class="mid-feature">✅ 1 User</li>
+        <li>🚫 Support</li>
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
@@ -174,9 +108,9 @@
       <div class="plan-title">Standard</div>
       <div class="plan-price">$19.99/month</div>
       <ul class="plan-features">
-        <ul>✅ 50GB Storage</ul>
-        <ul class="mid-feature">✅ 5 Users</ul>
-        <ul>✅ Phone &amp; Email Support</ul>
+        <li>✅ 50GB Storage</li>
+        <li class="mid-feature">✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
@@ -184,9 +118,9 @@
       <div class="plan-title">Premium</div>
       <div class="plan-price">$49.99/month</div>
       <ul class="plan-features">
-        <ul>✅ 100GB Storage</ul>
-        <ul class="mid-feature">✅ 10 Users</ul>
-        <ul>✅ 24/7 Support</ul>
+        <li>✅ 100GB Storage</li>
+        <li class="mid-feature">✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
